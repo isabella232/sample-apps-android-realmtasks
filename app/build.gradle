@@ -96,7 +96,7 @@ android.applicationVariants.all { variant ->
             // for only the output APK, not for the variant itself. Skipping this step simply
             // causes Gradle to use the value of variant.versionCode for the APK.
             output.versionCodeOverride =
-                    baseAbiVersionCode * 1000 + variant.versionCode
+                    baseAbiVersionCode * 1000 + variant.versionCode + 10000
         }
     }
 }
